@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: sans-serif;
+  background: #222;
+  color: white;
+
+}
+
+.navbar {
+  background: #444;
+  padding: 1rem;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+
+
+.btn {
+  border: solid 1px cyan;
+  text-decoration: none;
+  color: cyan;
+  background-color: #222;
+  cursor: pointer;
+  padding: 0.25rem 1rem;
+  border-radius: 0.25rem;
+  font-size: 0.9rem;
+  margin: 1rem;
+}
+
+.btn:hover {
+  border: solid 1px cyan;
+  color: #222;
+  background-color: cyan;
+}
+
+.btn.active {
+  border: solid 1px cyan;
+  color: #222;
+  background-color: cyan;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.gap-1 {
+  gap: 1rem;
+}
+
+.card {
+  width: calc((100%) / 8);
+  padding: 1rem;
+  background: #333;
+}
+
+.card .img {
+  width: 100%;
+  object-fit:contain;
+  aspect-ratio: 1;
+  object-position: top;
+
+
+}
+
+
+
+.card p {
+  margin: 0.5rem 0;
+}
+
+.card h2 {
+  margin: 0.5rem 0;
+}
+
+
+.link {
+  color: cyan;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.link:hover {
+  color: violet;
+}
