@@ -95,3 +95,8 @@ body {
 .link:hover {
   color: violet;
 }
+
+.img-review {
+
+  height: 400px ;
+}

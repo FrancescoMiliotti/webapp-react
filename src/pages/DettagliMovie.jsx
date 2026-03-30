@@ -23,7 +23,7 @@ function DettagliMovie() {
     return (
         <div>
             <h1>Recensione Film</h1>
-            <img src={movie.image} className="img" alt={movie.image} />
+            <img src={`http://localhost:3001/movies_cover/${movie.image}`} className="img-review" alt={movie.image} />
             <h2>{movie.title}</h2>
             
             <div className="flex-container flex-wrap gap-1">
