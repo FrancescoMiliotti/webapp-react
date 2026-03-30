@@ -22,7 +22,7 @@ function DettagliMovie() {
 
     return (
         <div>
-            <h1>Recensione Film</h1>
+            <h1>Recensioni Film</h1>
             <img src={`http://localhost:3001/movies_cover/${movie.image}`} className="img-review" alt={movie.image} />
             <h2>{movie.title}</h2>
             

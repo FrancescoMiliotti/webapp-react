@@ -13,7 +13,7 @@ function ReviewCard({ reviews }) {
 
             <div className="card" key={reviews.id || i}>
                 <h2>{reviews.name}</h2>
-                <h3>{reviews.vote}</h3>
+                <h3>Voto : {reviews.vote}</h3>
                 <p>{reviews.text}</p>
                 
 
