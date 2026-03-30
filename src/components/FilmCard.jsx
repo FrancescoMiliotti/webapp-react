@@ -15,7 +15,7 @@ function FilmCard({ movies }) {
                     <h3>{movie.director}</h3>
                     <p>{movie.release_year}</p>
                     <p>{movie.abstract}</p>
-                    <Link className="link" to={`/Reviews/${movie.id}`}>Recensioni Film</Link>
+                    <Link className="link" to={`/DettagliMovie/${movie.id}`}>Recensioni Film</Link>
                     
                     
                     
