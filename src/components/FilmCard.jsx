@@ -13,7 +13,8 @@ function FilmCard({ movies }) {
                     <h2>{movie.title}</h2>
                     <img src={movie.image} className="img" alt={movie.title} />
                     <h3>{movie.director}</h3>
-                    <p>{movie.year}</p>
+                    <p>{movie.release_year}</p>
+                    <p>{movie.abstract}</p>
                     <Link className="link" to={`/Reviews/${movie.id}`}>Recensioni Film</Link>
                     
                     
