@@ -1,8 +1,11 @@
 
+import ReviewCard from "../components/ReviewCard"
+
+
 function Reviews() {
 
 
-    const review = [{
+    const fakereviews = {
 
         id: 1,
         movie_id: 1,
@@ -11,23 +14,26 @@ function Reviews() {
         text: "A mind-bending masterpiece.",
         image: "https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg"
 
-    }]
+    }
+
+
+    const reviews = [
+        fakereviews,
+        fakereviews
+    ];
+
+
 
     return (
         <div>
             <h1>Recensioni Film</h1>
-            <div>
-                {review.map((review) => (
-                    <div className="card" key={review.id}>
-                        <img src={review.image} className="img" alt={review.name} />
-                        <h3>Name :{review.name}</h3>
-                        <span>Voto: {review.vote}</span>
-                        <p>Review :{review.text}</p>
-                        
-                    </div>
-                ))}
+            <div className="flex-container flex-wrap gap-1">
+                {reviews.map(review => <ReviewCard review={review} key={review.id}/>)}
+
             </div>
+
         </div>
+        
     );
 }
 

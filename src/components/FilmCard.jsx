@@ -16,11 +16,17 @@ function FilmCard({ movies }) {
                     <p>{movie.year}</p>
                     <Link className="link" to={`/Reviews/${movie.id}`}>Recensioni Film</Link>
                     
+                    
+                    
                 </div>
             ))}
+
+            
         </>
     );
 }
 
 export default FilmCard
+
+/*<Link className="link" to={`/ReviewCard/${movie.id}`}>Recensioni Film</Link>*/
 
